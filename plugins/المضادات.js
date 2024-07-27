@@ -442,7 +442,7 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.sendList(m.chat, `\`˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 .
+if (!/[01]/.test(command)) return await conn.sendList(m.chat, `\` 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵
 
 > *اختر خيار من القائمة*
 > *لبدء الإعدادات*
@@ -452,7 +452,7 @@ if (!/[01]/.test(command)) return await conn.sendList(m.chat, `\`˛ َِ𝗘َِ
 ❌ ⇢ *وظيفة معطلة*
 ⚠️ ⇢ *هذا الشات ليس مجموعة
 
-`, wm, `الاختيارات`, listSections, m) //conn.sendMessage(m.chat, texto, {quoted: fkontak})
+`, wm, `الازرار`, listSections, m) //conn.sendMessage(m.chat, texto, {quoted: fkontak})
 throw false
 }
 await conn.sendButton(m.chat, `╭┄〔 *${wm}* 〕┄⊱
@@ -465,7 +465,7 @@ await conn.sendButton(m.chat, `╭┄〔 *${wm}* 〕┄⊱
 };
 handler.help = ['اون', 'اوف'].map(v => v + 'able <option>')
 handler.tags = ['nable']
-handler.command = /^مضادات$/i
+handler.command = /^on|off|اقفل|افتح$/i
 export default handler;
 
 const more = String.fromCharCode(8206)

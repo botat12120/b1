@@ -21,8 +21,7 @@ global.suittag = ['201028085788'];
 global.prems = ['201028085788'];
 global.packname = '𝐸𝐿𝐴𝐾𝑅𝐸𝐵';
 global.author = '𝐁𝐨𝐭';
-global.wm = '
-  𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
+global.wm = '𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.titulowm = ' 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.titulowm2 = `>𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵`
 global.igfg = '⏐ 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
@@ -50,8 +49,8 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
-global.gt = '> ❯⏐ 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵🎀';
-global.mysticbot = '> ❯⏐  𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵🎀';
+global.gt = '>𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
+global.mysticbot = '>𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.md = 'https://atom.bio/elakrabelyotyobr';
 global.mysticbot = 'https://atom.bio/elakrabelyotyobr';
 global.waitt = '*[ ⏳ ]  _جاري التحميل•_*    https://whatsapp.com/channel/0029VahbMZl4tRrkdpJrCv2f';

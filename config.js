@@ -19,12 +19,13 @@ global.owner = [
 
 global.suittag = ['201028085788'];
 global.prems = ['201028085788'];
-global.packname = '❯⏐ elakreb ';
-global.author = '> ❯⏐ 𝐁𝐨𝐭';
-global.wm = '> 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
+global.packname = '𝐸𝐿𝐴𝐾𝑅𝐸𝐵';
+global.author = '𝐁𝐨𝐭';
+global.wm = '
+  𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.titulowm = ' 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.titulowm2 = `>𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵`
-global.igfg = '> ❯⏐ 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
+global.igfg = '⏐ 𝐵𝛩𝑇 𝐸𝐿𝐴𝐾𝑅𝐴𝐵';
 global.wait = '*[ ⏳ ]  _جاري التحميل•_*    https://whatsapp.com/channel/0029VahbMZl4tRrkdpJrCv2f';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');

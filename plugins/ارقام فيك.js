@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     let additionalLink = args.join(" ").trim(); 
     
     if (!lister.includes(feature)) {
-        return conn.sendButton(m.chat, cap, '𝑺𝐻𝐴𝑊𝐴𝑍𝐴-𝐵𝛩𝑇', pp, [['دولـة',`${usedPrefix + command} دولة`]], null, null, m);
+        return conn.sendButton(m.chat, cap, '𝐸𝐿𝐴𝐾𝑅𝐸𝐵-𝐵𝛩𝑇', pp, [['دولـة',`${usedPrefix + command} دولة`]], null, null, m);
     }
 
     if (feature === "دولة") {
@@ -71,7 +71,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
                     message: {
                         interactiveMessage: {
                             body: { text: caption },
-                            footer: { text: '𝐒𝐇𝐴𝐖𝐴𝐍𝐴-𝐁𝐎𝐓' },
+                            footer: { text: '𝐸𝐿𝐴𝐾𝑅𝐸𝐵-𝐁𝐎𝐓' },
                             header: {
                                 hasMediaAttachment: true,
                                 imageMessage: media.imageMessage,
@@ -85,7 +85,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
                                             sections: [
                                                 {
                                                     title: 'قائمة الدول',
-                                                    highlight_label: '🧞',
+                                                    highlight_label: '👾',
                                                     rows: heager
                                                 }
                                             ]

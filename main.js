@@ -416,15 +416,14 @@ global.reloadHandler = async function(restatConn) {
 
   // Para cambiar estos mensajes, solo los archivos en la carpeta de language, 
   // busque la clave "handler" dentro del json y cámbiela si es necesario
-  conn.welcome = '✦ـــــــــــــــــــــــــــــــــــ[ 𝐸𝐿𝐴𝐾𝑅𝐸𝐵 ]ــــــــــــــــــــــــــ\n\nـــــــــــــــــــــــــــــــــــــــــ✮ ⃟\n@subject\nــــــــــــــــــــــــــــــــــــــــ✮✮ ⃟\n│( نورت الروم ✨♥@user)\n├[ *المطور* ]—\n│ *˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 .*\n\n\n*الوصف ✨♥*✮ ⃟ـــــــــــــــــــــــــــــــــــــــــــــdesc' 
-   conn.bye = ' 𝐸𝐿𝐴𝐾𝑅𝐸𝐵 \n *هتغور هيجي مكانك طبور 😂😂🤲🏻* @user*👋🏻*'
+conn.welcome = '✦━━━━[ ˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 . ]━━━━✦\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( نورت الروم ✨♥@user)\n├[ *المطور* ]—\n│ *ELAKRAB ELYOTUBER*\n┗––––––━━┅┅┅\n\n––––––┅┅ *الوصف ✨♥*┅┅––––––\n@desc' 
+   conn.bye = ' 𝐸𝐿𝐴𝐾𝑅𝐸𝐵 \n *هتغور هيجي مكانك طبور 😂😂🤲🏻* @user* 👋🏻*'
 conn.spromote = '*@user مبروك الادمن يا قلب اخوك ♥*'
 conn.sdemote = '*@user  كنت ادمن حلو ملكش نصيب تكمل ادمين  ♥*'
 conn.sDesc = '*تم تعديل وصف الجروب ♥*\n\n*الوصف الجديد:* @desc'
 conn.sSubject = ' تم تغير اسم الجروب ♥*\n*الاسم الجديد:* @subject'
 conn.sIcon = '*تم تغير صوره الجروب ♥*'
 conn.sRevoke = '*تم تحديث رابط الجروب ♥*\n*اللينك الجديد:* @revoke'
-
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);

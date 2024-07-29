@@ -9,11 +9,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       return conn.sendButton(
       m.chat,
       'اخـتـر', 
-      '𝘽𝙔:𝗕𝗢𝗧 𝗘𝗟𝗔𝗞𝗥𝗔𝗕 ',
+      '𝘽𝙔:𝗘𝗟𝗔𝗞𝗥𝗔𝗕 ',
       pp,
       [
-        ['open group ', `${usedPrefix + command} فتح`],
-        ['close group ', `${usedPrefix + command} قفل`]
+        ['فــتـح الـجــروب', `${usedPrefix + command} فتح`],
+        ['قـفـل الــجــروب', `${usedPrefix + command} قفل`]
       ], null, 
       m
     );

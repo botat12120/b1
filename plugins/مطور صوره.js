@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 
 handler.help = ['مطور'];
 handler.tags = ['البوت'];
-handler.command = ['مطورى|مطوري|المطور'];
+handler.command = ['مطورى|مطوري'];
 
 export default handler;
 

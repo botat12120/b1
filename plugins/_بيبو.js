@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
   // رسالة مع التعديل المطلوب
   let msg = `*اهـلا ⌊ ${mentionedUsername} ⌉ انـا بـــيـبو • تـحـتـاج الـى مـسـاعـدة؟ ، اكـتـب﹙.اوامــر﹚*\n\n> *الـبـوت يـعـمـل فـي الـخـاص والـجـروبـات ويـمـنـع شـتـم الـبـوت لاي سـبـب*`;
 
-  conn.sendFile(m.chat, imgurl, filename, msg, m, false, { thumbnail: Buffer.alloc(0), mentions: [who] });
+  conn.sendButton(m.chat, str, '𝐸𝐿𝐴𝐾𝑅𝐸𝐵', videoUrl,[[``,``]], null,[[`المطور`,`https://wa.me/201028085788`],[`القناه`,`https://whatsapp.com/channel/0029VahbMZl4tRrkdpJrCv2f`]], m);
 };
 
 handler.customPrefix = /^(بيبو|bot|bebo)$/i;

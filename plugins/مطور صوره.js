@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 
 handler.help = ['مطور'];
 handler.tags = ['البوت'];
-handler.command = ['مطورى|مطوري'];
+handler.command = ['مطورى'];
 
 export default handler;
 
@@ -66,4 +66,4 @@ function ucapan() {
     if (time >= 15) res = "مساء الخير 🌇";
     if (time >= 18) res = "مساء الخير 🌙";
     return res;
-}
+                         }

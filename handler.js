@@ -1759,7 +1759,7 @@ export async function callUpdate(callUpdate) {
   for (const nk of callUpdate) {
     if (nk.isGroup == false) {
       if (nk.status == 'offer') {
-        const callmsg = await mconn.conn.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} بـص انـت اتـصلت عـلي الـبوت فا هـتـتـحظـر دلـوقـتـي روح كلـم الـمطـور لـو رنـيـت بـالـغـلـط ⚡👾`, false, { mentions: [nk.from] });
+        const callmsg = await mconn.conn.reply(nk.from, `اهلا ي *@${nk.from.split('@')[0]}*, ${nk.isVideo ? 'videollamadas' : 'بوت العقرب'} بـص انـت اتـصلت عـلي الـبوت فا هـتـتـحظـر دلـوقـتـي روح كلـم الـمطـور لـو رنـيـت بـالـغـلـط ⚡👾`, false, { mentions: [nk.from] });
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
         const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 . 👑;;;\nFN:˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 . 👑\nORG:˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 . 👑\nTITLE:\nitem1.TEL;waid=201028085788:+20 0102 808 5788\nitem1.X-ABLabel:˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 . 👑\n𝐸𝐿𝐴𝐾𝑅𝐸𝐵👑\nEND:VCARD`;

@@ -10,7 +10,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   https://api.whatsapp.com/send?phone=+201028085788
   
   جروب الدعم          
-  https://chat.whatsapp.com/L6waLqtO4Of2ttylZoLefD`, false, {mentions: [m.sender]});
+https://chat.whatsapp.com/LaONgMPR6fKGjcAIvuF6IU`, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;

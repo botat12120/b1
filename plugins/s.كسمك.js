@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
   let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
   setTimeout(() => {
     conn.sendFile(m.chat, stiker, null, { asSticker: true })
-  }, 10000) // تاخير 5 ثواني
+  },) // تاخير 5 ثواني
 }
 
 handler.customPrefix = /كسمك/i

@@ -68,7 +68,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
               message: {
                   interactiveMessage: {
                       body: { text: dataMessage },
-                      footer: { text: `𝒁𝒆𝒛𝒐 𝑩𝒐𝒕`.trim() },
+                      footer: { text: ` 𝐸𝐿𝐴𝐾𝑅𝐸𝐵 𝐵𝛩𝑇`.trim() },
                       header: {
                           hasMediaAttachment: true,
                           imageMessage: messa.imageMessage,

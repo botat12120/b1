@@ -2,11 +2,8 @@ import axios from 'axios';
 const { proto, generateWAMessageFromContent, generateWAMessageContent } = (await import("@whiskeysockets/baileys")).default;
 
 let handler = async (message, { conn, text, usedPrefix, command }) => {
-  // مصفوفة الكلمات المفتاحية الإسلامية
-  const searchQueries = ['حديث', 'الرسول صلى الله عليه وسلم', 'حديث شريف', 'حديث نبوي'];
-  
-  // اختيار كلمة عشوائية من المصفوفة
-  const searchQuery = searchQueries[Math.floor(Math.random() * searchQueries.length)];
+
+  const searchQuery = text.trim();
 
   async function createVideoMessage(url) {
     const { videoMessage } = await generateWAMessageContent({ video: { url } }, { upload: conn.waUploadToServer });
@@ -22,7 +19,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
   
   try {
     let results = [];
-    let { data: response } = await axios.get('https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=' + searchQuery);
+    let { data: response } = await axios.get('https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=' + encodeURIComponent(searchQuery));
     let searchResults = response.data;
     shuffleArray(searchResults);
     let selectedResults = searchResults.splice(0, 7);
@@ -30,7 +27,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
     for (let result of selectedResults) {
       results.push({
         body: proto.Message.InteractiveMessage.Body.fromObject({ text: null }),
-        footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: "BY :ほ𝐸𝐿𝐴𝐾𝑅𝐸𝐵〆" }), // ضع العلامة المائية هنا
+        footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: "BY :ほ𝐸𝐿𝐴𝐾𝑅𝐸𝐵〆" }), 
         header: proto.Message.InteractiveMessage.Header.fromObject({
           title: '' + result.title,
           hasMediaAttachment: true,
@@ -48,8 +45,8 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
             deviceListMetadataVersion: 2
           },
           interactiveMessage: proto.Message.InteractiveMessage.fromObject({
-            body: proto.Message.InteractiveMessage.Body.create({ text: 'نتائج البحث يا اخي الكريم❤️' + searchQuery }),
-            footer: proto.Message.InteractiveMessage.Footer.create({ text: '🔎 `حديث`' }),
+            body: proto.Message.InteractiveMessage.Body.create({ text: 'اتـفـضل طـلـبـك ♥'  + searchQuery }),
+            footer: proto.Message.InteractiveMessage.Footer.create({ text: '🔎 `بحث`' }),
             header: proto.Message.InteractiveMessage.Header.create({ hasMediaAttachment: false }),
             carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({ cards: [...results] })
           })
@@ -63,8 +60,8 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.help = ['دين'];
-handler.tags = ['شانكس'];
-handler.command = ['tiktoksearch', 'تصفح2', 'حديث'];
+handler.help = ['بحث'];
+handler.tags = ['العقرب'];
+handler.command = ['tiktoksearch', 'تصفح2', 'ابحث'];
 
 export default handler;
